@@ -12,6 +12,6 @@
     "build:macos": "npm run build -- --bundles app"
   },
   "devDependencies": {
-    "@tauri-apps/cli": "^2.1.0"
+    "@tauri-apps/cli": "^2.12.2"
   }
 }
