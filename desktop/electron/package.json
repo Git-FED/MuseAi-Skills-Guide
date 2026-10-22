@@ -14,7 +14,7 @@
     "dist": "npm run prepare:site && electron-builder --config electron-builder.yml --win nsis --x64"
   },
   "devDependencies": {
-    "electron": "^44.5.1",
+    "electron": "^44.9.0",
     "electron-builder": "^26.15.3"
   },
   "build": {
