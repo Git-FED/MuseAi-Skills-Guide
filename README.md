@@ -35,7 +35,7 @@ Use these light-hearted images in release posts, social updates, or project disc
 ## What is included
 
 - **Web/PWA:** the self-contained static app in [`site/`](site/) with a device-local `localStorage` ledger.
-- **Skills Guide:** five ready-to-install examples in [`SKILLS.md`](SKILLS.md), plus the source files in [`skills/`](skills/).
+- **Skills Guide:** ten ready-to-install examples in [`SKILLS.md`](SKILLS.md), plus the source files in [`skills/`](skills/).
 - **Lessons and modules:** a progressive curriculum from orientation through capstone projects in [`lessons/`](lessons/) and [`modules/`](modules/).
 - **Desktop and Android shells:** optional wrappers around the same canonical site under [`desktop/`](desktop/) and [`android/`](android/).
 - **Privacy boundaries:** guidance that keeps measured, reported, estimated, and unavailable values separate.
@@ -61,7 +61,7 @@ mkdir -p .skills
 cp skills/audit-ledger/SKILL.md .skills/
 ```
 
-The examples cover audit-ledger tracking, privacy-boundary review, lesson planning, prompt review, and project scoping. They are intentionally small enough to inspect before installing.
+The examples cover audit-ledger tracking, privacy-boundary review, lesson planning, prompt review, and project scoping. The new additions cover credential diagnosis, posting pre-flight checks, delegating with a brief and receipt, verifying before claiming, and treating HTTP 2xx as success. They are intentionally small enough to inspect before installing.
 
 ## Roadmap
 

@@ -35,6 +35,26 @@ Replace `audit-ledger` with any folder below. Keep only the skills you want acti
 
 `skills/project-brief/SKILL.md` converts an idea into a buildable brief with users, non-goals, acceptance criteria, risks, and a first milestone.
 
+### Credential Diagnostic
+
+`skills/credential-diagnostic/SKILL.md` tests a suspect credential against the correct endpoint and the four-check rule before declaring any key dead or asking the user to repost it. A 403 on one endpoint is not a dead token, and a rotating refresh token must be saved in the same run that burns the old one.
+
+### Posting Run Pre-Flight
+
+`skills/posting-run-preflight/SKILL.md` verifies every destination account, its audience tag, and its platform scope before any posting run, so content never lands on the wrong account or in the wrong audience. Copy approval covers the copy, not the destination.
+
+### Delegate With a Brief and a Receipt
+
+`skills/delegate-with-brief-and-receipt/SKILL.md` hands work to a subagent, background worker, or browser task with a definition-first brief, the full scope enumerated by name, and a durable result receipt, and verifies the outcome before reporting it done.
+
+### Verify Before You Claim
+
+`skills/verify-before-claim/SKILL.md` confirms a link, redirect, post, or upload is live from an unblocked path before reporting it delivered, and reports only what the check actually showed. Queued is not posted, and a local file is not a published one.
+
+### HTTP Success, No Retry
+
+`skills/http-success-no-retry/SKILL.md` treats any HTTP 2xx response as success and checks what landed before retrying, so a created post is never sent twice.
+
 ## Design principles
 
 - Prefer evidence over confident narration.
