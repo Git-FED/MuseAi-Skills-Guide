@@ -7,8 +7,8 @@ description: Verify every destination account, its audience tag, and its platfor
 
 ## Tag every destination by audience
 
-- List every destination account for the run with its audience tag, for example work/tech, personal, or adult. No account ships without a tag.
-- Content must match its audience tag. Audiences never mix: work content never goes to a personal or adult account, and adult content never goes to a work account.
+- List every destination account for the run with its audience tag, for example work/tech, personal, or community. No account ships without a tag.
+- Content must match its audience tag. Audiences never mix: work content never goes to a personal account, and personal content never goes to a work account.
 - When a worker carries the run, the brief names each account and its tag, so the worker cannot choose a destination on its own.
 
 ## Verify each account and its scope
