@@ -24,6 +24,8 @@ jobs:
         run: |
           node --check site/assets/js/app.js
           node --check site/assets/js/ledger.js
+      - name: Test ledger semantic validation
+        run: node --test tests/ledger-semantic.test.cjs
       - name: Validate manifest
         run: python3 -m json.tool site/manifest.webmanifest >/dev/null
       - name: Validate desktop structure
