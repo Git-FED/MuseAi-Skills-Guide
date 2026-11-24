@@ -139,6 +139,14 @@
     event.preventDefault();
     const value = valuesFromForm();
     if (!value.actionId || !value.target) { announce('Add an action ID and target before saving.'); return; }
+    if (value.method === 'estimated' && !value.evidence) {
+      announce('Provide the basis or calculation for the estimate.');
+      return;
+    }
+    if (value.method === 'unavailable' && (value.sentBytes !== null || value.receivedBytes !== null)) {
+      announce('Leave byte fields blank for unavailable values.');
+      return;
+    }
     if (editingId) entries = entries.map(entry => entry.id === editingId ? { ...entry, ...value } : entry);
     else entries.unshift({ id: crypto.randomUUID ? crypto.randomUUID() : `${Date.now()}-${Math.random()}`, createdAt: new Date().toISOString(), ...value });
     persist(); render(); resetForm(); announce('Saved locally on this device.');
