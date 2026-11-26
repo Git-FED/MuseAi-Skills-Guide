@@ -14,7 +14,7 @@ description: Test a suspect credential against the correct endpoint and the four
 ## Run the four checks
 
 - Rule out each of these before you blame the credential: the account is suspended, the site is under maintenance, a rate limit was hit, or the link or token expired.
-- When none of the four apply, the method is the issue, never the key. Fix your call and retest instead of asking for a new key.
+- If none of the four checks explains the failure, suspect the method first, but the key may still be invalid. Fix and retest any request error you find. Use the identity check or other available evidence to assess the key, and ask for a new key only if the evidence shows one is needed. Report what the checks establish, even if the exact cause remains unknown.
 
 ## Check stored credentials before asking
 
